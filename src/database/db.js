@@ -73,8 +73,5 @@ db.serialize(function(){
 //         }
 //    });
 
-  
-
-
 
 });

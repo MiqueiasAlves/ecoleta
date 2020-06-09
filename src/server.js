@@ -66,7 +66,9 @@ server.post("/savepoint", function(req, res){
    function afterInsertDara(err){
         if(err){
             console.log(err);
-            return res.send("Erro no cadastro");
+            //return res.send("Erro no cadastro");          
+            return res.render("create-point.html", {saved:false});
+
 
         }else{
             console.log("cadastrado com sucesso");

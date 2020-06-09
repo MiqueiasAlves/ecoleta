@@ -107,12 +107,16 @@
 
 
 {% block modal %}
+     
      {% if saved %}
-        {% include "partials/point-created.html" %}
+      {% include "partials/point-created.html" %}
     {% endif %}
+
+    {% if saved==false %}
+      {% include "partials/point-created-erro.html" %}
+    {% endif %}
+      
 {% endblock modal %}
-
-
 
 
 
